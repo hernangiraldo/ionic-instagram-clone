@@ -1,0 +1,23 @@
+ion-icon {
+  font-size: 1.725rem;
+}
+
+.ion-selectable {
+  .filled {
+    display: none;
+  }
+}
+
+.tab-selected {
+  .filled {
+    display: initial;
+  }
+
+  .outline {
+    display: none;
+  }
+}
+
+.user-profile {
+  height: 26px;
+}

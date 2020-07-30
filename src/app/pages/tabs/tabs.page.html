@@ -1,0 +1,27 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="news-feed">
+      <ion-icon class="outline" name="home-outline"></ion-icon>
+      <ion-icon class="filled" name="home-sharp"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="discover">
+      <ion-icon class="outline" name="search-outline"></ion-icon>
+      <ion-icon class="filled" name="search-sharp"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="addNewPhoto()">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="activity">
+      <ion-icon class="outline" name="heart-outline"></ion-icon>
+      <ion-icon class="filled" name="heart-sharp"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <span class="icon-profile outline"></span>
+      <span class="icon-profile-filled filled"></span>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
