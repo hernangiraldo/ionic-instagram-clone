@@ -1,0 +1,65 @@
+$image-size: 70px;
+
+:host {
+  display: block;
+  width: $image-size;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 0 .5rem;
+}
+
+.story {
+  &__image-wrapper {
+    border-radius: 50%;
+    height: $image-size;
+    width: $image-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &.friends-stories {
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+  }
+
+  &__icon-wrapper {
+    padding: 1px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    .icon-add_filled {
+      font-size: 1.1rem;
+      color: cornflowerblue;
+    }
+  }
+
+  &__figure {
+    margin: 0;
+    padding: 0;
+    background: white;
+    border-radius: 50%;
+    width: 92%;
+    height: 92%;
+    overflow: hidden;
+    border: 3px solid white;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__username {
+    font-size: 0.725rem;
+  }
+}

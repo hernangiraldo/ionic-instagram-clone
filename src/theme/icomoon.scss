@@ -26,9 +26,85 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-profile:before {
+
+.icon-message:before {
+  content: "\e911";
+}
+.icon-activity:before {
+  content: "\e900";
+}
+.icon-add_filled:before {
   content: "\e901";
 }
-.icon-profile-filled:before {
-  content: "\e900";
+.icon-add:before {
+  content: "\e902";
+}
+.icon-archive:before {
+  content: "\e903";
+}
+.icon-back:before {
+  content: "\e904";
+}
+.icon-camera_filled:before {
+  content: "\e905";
+}
+.icon-camera:before {
+  content: "\e906";
+}
+.icon-close_friends:before {
+  content: "\e907";
+}
+.icon-discover_people:before {
+  content: "\e908";
+}
+.icon-dots:before {
+  content: "\e909";
+}
+.icon-edit:before {
+  content: "\e90a";
+}
+.icon-grid:before {
+  content: "\e90b";
+}
+.icon-heart_filled:before {
+  content: "\e90c";
+}
+.icon-heart:before {
+  content: "\e90d";
+}
+.icon-home_filled:before {
+  content: "\e90e";
+}
+.icon-home:before {
+  content: "\e90f";
+}
+.icon-menu:before {
+  content: "\e910";
+}
+.icon-nametag:before {
+  content: "\e912";
+}
+.icon-person:before {
+  content: "\e913";
+}
+.icon-saved:before {
+  content: "\e914";
+}
+.icon-search_bold:before {
+  content: "\e915";
+}
+.icon-search:before {
+  content: "\e916";
+}
+.icon-send:before {
+  content: "\e917";
+}
+.icon-settings:before {
+  content: "\e918";
+}
+.icon-tagged:before {
+  content: "\e919";
+}
+.icon-video_camera:before {
+  content: "\e91a";
 }

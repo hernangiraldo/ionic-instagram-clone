@@ -7,6 +7,11 @@ import { IonicModule } from '@ionic/angular';
 import { NewsFeedPageRoutingModule } from './news-feed-routing.module';
 
 import { NewsFeedPage } from './news-feed.page';
+import { StoryComponent } from '../../components/story/story.component';
+import { StorySliderComponent } from '../../components/story-slider/story-slider.component';
+import { PostComponent } from '../../components/post/post.component';
+import { CommentsComponent } from '../../modals/comments/comments.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @NgModule({
   imports: [
@@ -15,6 +20,13 @@ import { NewsFeedPage } from './news-feed.page';
     IonicModule,
     NewsFeedPageRoutingModule
   ],
-  declarations: [NewsFeedPage]
+  declarations: [
+    NewsFeedPage,
+    StoryComponent,
+    StorySliderComponent,
+    PostComponent,
+    CommentsComponent,
+    HeaderComponent
+  ]
 })
 export class NewsFeedPageModule {}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { fancyAnimation } from '../../animations';
 
 @Component({
   selector: 'app-news-feed',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsFeedPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navController: NavController
+  ) { }
 
   ngOnInit() {
+  }
+
+  public goToDirectMessages(): void {
+    this.navController.navigateForward('/direct-messages', { animated: true , animation: fancyAnimation});
   }
 
 }

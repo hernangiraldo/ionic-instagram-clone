@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'direct-messages',
+    loadChildren: () => import('./pages/direct-messages/direct-messages.module').then( m => m.DirectMessagesPageModule)
   }
 ];
 

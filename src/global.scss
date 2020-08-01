@@ -27,8 +27,58 @@
 
 @import "theme/icomoon";
 
-ion-toolbar {
-  ion-buttons {
-    font-size: 1.5rem;
+.ion-toolbar {
+  .ion-buttons {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+ion-header {
+  &:after {
+    left: 0;
+    bottom: -5px;
+    background-position: left 0 top -2px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAHBAMAAADzDtBxAAAAD1BMVEUAAAAAAAAAAAAAAAAAAABPDueNAAAABXRSTlMUCS0gBIh/TXEAAAAaSURBVAjXYxCEAgY4UIICBmMogMsgFLtAAQCNSwXZKOdPxgAAAABJRU5ErkJggg==);
+    background-repeat: repeat-x;
+    content: "";
+  }
+}
+
+.ig-header {
+  display: flex;
+  padding: 0 .5rem;
+  --border-width: 0 !important;
+  --min-height: 44px;
+
+  &.no-icons {
+    .ion-title {
+      padding: 0 .5rem;
+    }
+  }
+
+  .ion-title {
+    text-align: left;
+    flex: 1;
+    padding: 0 2.5rem;
+    align-items: center;
+  }
+}
+
+.ion-slides {
+  .swiper-pagination-bullet-active {
+    background-color: cornflowerblue;
+  }
+
+  &.post {
+    overflow: initial;
+
+    .swiper-pagination-bullets {
+      bottom: -26px;
+    }
   }
 }
