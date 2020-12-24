@@ -9,6 +9,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: '',
+        redirectTo: 'news-feed',
+        pathMatch: 'full'
+      },
+      {
         path: 'news-feed',
         children: [
           {
